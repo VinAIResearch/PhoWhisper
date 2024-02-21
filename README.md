@@ -12,19 +12,18 @@ We introduce **PhoWhisper** in five versions for Vietnamese automatic speech rec
 }
 ```
 
-## Model download
+## Model download & WER results
 
-| Model | #parameters |
-|---|---|
-[vinai/PhoWhisper-tiny](https://huggingface.co/vinai/PhoWhisper-tiny) | 39M
-[vinai/PhoWhisper-base](https://huggingface.co/vinai/PhoWhisper-base) | 74M
-[vinai/PhoWhisper-small](https://huggingface.co/vinai/PhoWhisper-small) | 244M
-[vinai/PhoWhisper-medium](https://huggingface.co/vinai/PhoWhisper-medium) | 769M
-[vinai/PhoWhisper-large](https://huggingface.co/vinai/PhoWhisper-large) | 1.55B
-
-The following table shows word error rates on benchmarks' test sets:
-
-<img width="500" alt="Screenshot 2024-02-21 at 11 21 22 pm" src="https://github.com/VinAIResearch/PhoWhisper/assets/2412555/370bdfa6-575e-488d-af10-7fcc2c2989f9">
+| Model | #paras | CMV–Vi | VIVOS | VLSP 2020 Task-1 | VLSP 2020 Task-2
+|---|---|---|---|---|---|
+[`vinai/PhoWhisper-tiny`](https://huggingface.co/vinai/PhoWhisper-tiny) | 39M |19.05 |10.41 |20.74 |49.85
+[`vinai/PhoWhisper-base`](https://huggingface.co/vinai/PhoWhisper-base) | 74M |16.19 |8.46 |19.70| 43.01
+[`vinai/PhoWhisper-small`](https://huggingface.co/vinai/PhoWhisper-small) | 244M |11.08 |6.33 |15.93 |32.96
+[`vinai/PhoWhisper-medium`](https://huggingface.co/vinai/PhoWhisper-medium) | 769M |8.27 |4.97 |14.12 |26.85
+[`vinai/PhoWhisper-large`](https://huggingface.co/vinai/PhoWhisper-large) | **1.55B** |**8.14** |**4.67** |**13.75** |**26.68**
+`wav2vec2-base-vietnamese-250h` |95M |102.04 |10.83 |21.02 |50.35
+`wav2vec2-base-vi-vlsp2020` |95M |103.71| 9.90 |16.82 |44.91
+`wav2vec2-large-vi-vlsp2020` |317M |101.41 |8.61 |15.18 |36.75
 
 ## Run the model
 
@@ -32,7 +31,7 @@ The following table shows word error rates on benchmarks' test sets:
 
 ```python
 from transformers import pipeline
-transcriber = pipeline("automatic-speech-recognition", model="vinai/phowhisper-large")
+transcriber = pipeline("automatic-speech-recognition", model="vinai/PhoWhisper-small")
 output = transcriber(path_to_audio_with_sampling_rate_16kHz)['text']
 ```
 
