@@ -21,9 +21,9 @@ We introduce **PhoWhisper** in five versions for Vietnamese automatic speech rec
 [`vinai/PhoWhisper-small`](https://huggingface.co/vinai/PhoWhisper-small) | 244M |11.08 |6.33 |15.93 |32.96
 [`vinai/PhoWhisper-medium`](https://huggingface.co/vinai/PhoWhisper-medium) | 769M |8.27 |4.97 |14.12 |26.85
 [`vinai/PhoWhisper-large`](https://huggingface.co/vinai/PhoWhisper-large) | **1.55B** |**8.14** |**4.67** |**13.75** |**26.68**
-`wav2vec2-base-vietnamese-250h` |95M |102.04 |10.83 |21.02 |50.35
+<!--`wav2vec2-base-vietnamese-250h` |95M |102.04 |10.83 |21.02 |50.35
 `wav2vec2-base-vi-vlsp2020` |95M |103.71| 9.90 |16.82 |44.91
-`wav2vec2-large-vi-vlsp2020` |317M |101.41 |8.61 |15.18 |36.75
+`wav2vec2-large-vi-vlsp2020` |317M |101.41 |8.61 |15.18 |36.75-->
 
 ## Run the model
 
