@@ -1,7 +1,7 @@
 # PhoWhisper:  Automatic  Speech  Recognition for  Vietnamese
 
 
-We introduce **PhoWhisper** in five versions for Vietnamese automatic speech recognition. PhoWhisper's robustness is achieved through fine-tuning the multilingual [Whisper](https://github.com/openai/whisper)  on an 844-hour dataset that encompasses diverse Vietnamese accents. Our experimental study demonstrates state-of-the-art performances of PhoWhisper on benchmark Vietnamese ASR datasets. Please **cite** our PhoWhisper paper when it is used to help produce published results or is incorporated into other software:
+We introduce **PhoWhisper** in five versions for Vietnamese automatic speech recognition. PhoWhisper's robustness is achieved through fine-tuning the multilingual [Whisper](https://github.com/openai/whisper)  on an 844-hour dataset that encompasses diverse Vietnamese accents. Our experimental study demonstrates state-of-the-art performances of PhoWhisper on benchmark Vietnamese ASR datasets. Please **cite** [our PhoWhisper paper](https://openreview.net/pdf?id=qsif2awK2L) when it is used to help produce published results or is incorporated into other software:
 
 ```
 @inproceedings{PhoWhisper,
