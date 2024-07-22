@@ -40,7 +40,7 @@ output = transcriber(path_to_audio_with_sampling_rate_16kHz)['text']
 ## License
 
 ```
-Copyright (c) 2024 VinAI Research
+Copyright (c) 2024 VinAI
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
